@@ -13,6 +13,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = ColView.dequeueReusableCell(withReuseIdentifier: "callCell", for: indexPath) as! CalCell
+        
+        cell.DayLbl.text = tDays[indexPath.item]
+        
+        return cell
+        
+    }
+    
+    
     
     @IBOutlet weak var monthLbl: UILabel!
     
@@ -23,8 +33,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func setCellsView(){
         
-        let width = (ColView.frame.size.width - 2) / 8
-        let height = (ColView.frame.size.height - 2) / 8
+        let width = (ColView.frame.size.width - 2) / 7
+        let height = (ColView.frame.size.height - 2) / 7
         
         let flowLayout = ColView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.itemSize = CGSize(width: width, height: height)
@@ -52,19 +62,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             count += 1
         }
         
-        monthLbl.text = CallMeth().monthString(date: dateSelector)
-        monthLbl.text = CallMeth().yearString(date: dateSelector)
+        monthLbl?.text = CallMeth().monthString(date: dateSelector)
+            + " " + CallMeth().yearString(date: dateSelector)
         ColView.reloadData()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = ColView.dequeueReusableCell(withReuseIdentifier: "callCell", for: indexPath) as! CalCell
-        
-        cell.DayLbl.text = tDays[indexPath.item]
-        
-        return cell
-        
-    }
+    
+   
     
     @IBAction func PrMonth(_ sender: Any) {
         
