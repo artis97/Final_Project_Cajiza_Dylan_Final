@@ -14,6 +14,7 @@
 		01C178042901B82F004A12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C178032901B82F004A12CB /* Assets.xcassets */; };
 		01C178072901B82F004A12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C178052901B82F004A12CB /* LaunchScreen.storyboard */; };
 		01C1780F290465FB004A12CB /* CalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1780E290465FB004A12CB /* CalCell.swift */; };
+		01C178112904795A004A12CB /* CallMeth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C178102904795A004A12CB /* CallMeth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		01C178062901B82F004A12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01C178082901B82F004A12CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01C1780E290465FB004A12CB /* CalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCell.swift; sourceTree = "<group>"; };
+		01C178102904795A004A12CB /* CallMeth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallMeth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				01C177FC2901B82B004A12CB /* SceneDelegate.swift */,
 				01C177FE2901B82B004A12CB /* ViewController.swift */,
 				01C178002901B82B004A12CB /* Main.storyboard */,
+				01C178102904795A004A12CB /* CallMeth.swift */,
 				01C1780E290465FB004A12CB /* CalCell.swift */,
 				01C178032901B82F004A12CB /* Assets.xcassets */,
 				01C178052901B82F004A12CB /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				01C177FF2901B82B004A12CB /* ViewController.swift in Sources */,
 				01C177FB2901B82B004A12CB /* AppDelegate.swift in Sources */,
 				01C177FD2901B82B004A12CB /* SceneDelegate.swift in Sources */,
+				01C178112904795A004A12CB /* CallMeth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
