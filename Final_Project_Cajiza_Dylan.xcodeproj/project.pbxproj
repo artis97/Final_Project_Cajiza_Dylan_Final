@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01265690290576A6004D7230 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126568F290576A6004D7230 /* EditEventViewController.swift */; };
+		01265692290577B3004D7230 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01265691290577B2004D7230 /* EventCell.swift */; };
+		01265694290579D4004D7230 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01265693290579D4004D7230 /* Event.swift */; };
+		017C44252904B6B000165050 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C44242904B6B000165050 /* WeekViewController.swift */; };
 		01C177FB2901B82B004A12CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C177FA2901B82B004A12CB /* AppDelegate.swift */; };
 		01C177FD2901B82B004A12CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C177FC2901B82B004A12CB /* SceneDelegate.swift */; };
 		01C177FF2901B82B004A12CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C177FE2901B82B004A12CB /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0126568F290576A6004D7230 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		01265691290577B2004D7230 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		01265693290579D4004D7230 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		017C44242904B6B000165050 /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
 		01C177F72901B82B004A12CB /* Final_Project_Cajiza_Dylan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_Project_Cajiza_Dylan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C177FA2901B82B004A12CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C177FC2901B82B004A12CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 				01C177FC2901B82B004A12CB /* SceneDelegate.swift */,
 				01C177FE2901B82B004A12CB /* ViewController.swift */,
 				01C178002901B82B004A12CB /* Main.storyboard */,
+				01265693290579D4004D7230 /* Event.swift */,
+				0126568F290576A6004D7230 /* EditEventViewController.swift */,
+				01265691290577B2004D7230 /* EventCell.swift */,
+				017C44242904B6B000165050 /* WeekViewController.swift */,
 				01C178102904795A004A12CB /* CallMeth.swift */,
 				01C1780E290465FB004A12CB /* CalCell.swift */,
 				01C178032901B82F004A12CB /* Assets.xcassets */,
@@ -144,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017C44252904B6B000165050 /* WeekViewController.swift in Sources */,
+				01265694290579D4004D7230 /* Event.swift in Sources */,
 				01C1780F290465FB004A12CB /* CalCell.swift in Sources */,
+				01265690290576A6004D7230 /* EditEventViewController.swift in Sources */,
 				01C177FF2901B82B004A12CB /* ViewController.swift in Sources */,
+				01265692290577B3004D7230 /* EventCell.swift in Sources */,
 				01C177FB2901B82B004A12CB /* AppDelegate.swift in Sources */,
 				01C177FD2901B82B004A12CB /* SceneDelegate.swift in Sources */,
 				01C178112904795A004A12CB /* CallMeth.swift in Sources */,

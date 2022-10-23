@@ -10,5 +10,7 @@ import UIKit
 class CalCell: UICollectionViewCell{
     
     @IBOutlet weak var DayLbl: UILabel!
+   
+    
     
 }

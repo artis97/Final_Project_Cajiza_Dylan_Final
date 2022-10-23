@@ -14,7 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = ColView.dequeueReusableCell(withReuseIdentifier: "callCell", for: indexPath) as! CalCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "callCell", for: indexPath) as! CalCell
         
         cell.DayLbl.text = tDays[indexPath.item]
         
@@ -26,17 +26,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var monthLbl: UILabel!
     
-    @IBOutlet weak var ColView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var dateSelector = Date()
     var tDays = [String]()
     
     func setCellsView(){
         
-        let width = (ColView.frame.size.width - 2) / 7
-        let height = (ColView.frame.size.height - 2) / 7
+        let width = (collectionView.frame.size.width - 2) / 7
+        let height = (collectionView.frame.size.height - 2) / 7
         
-        let flowLayout = ColView.collectionViewLayout as! UICollectionViewFlowLayout
+        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.itemSize = CGSize(width: width, height: height)
 
     }
@@ -64,7 +64,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         monthLbl?.text = CallMeth().monthString(date: dateSelector)
             + " " + CallMeth().yearString(date: dateSelector)
-        ColView.reloadData()
+        collectionView.reloadData()
     }
     
     

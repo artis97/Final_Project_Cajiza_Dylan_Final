@@ -26,6 +26,8 @@ class CallMeth{
         return dFormat.string(from: date)
     }
     
+    
+    
     func yearString(date: Date) -> String{
         
         let dFormat = DateFormatter()
@@ -33,6 +35,15 @@ class CallMeth{
         
         return dFormat.string(from: date)
     }
+    
+    
+    func timeString(date: Date) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: date)
+    }
+    
     
     func daysInMonth(date: Date) -> Int {
         
@@ -57,4 +68,28 @@ class CallMeth{
         let compon = calendar.dateComponents([.weekday], from: date)
         return compon.weekday! - 1 
     }
+    
+    func addDays(date: Date, days: Int) -> Date {
+        
+       return calendar.date(byAdding: .day, value: days, to: date)!
+    }
+    
+    func sundayFordate(date: Date) -> Date{
+        
+        var curr = date
+        let aWeekAgo = addDays(date: curr, days: -7)
+        
+        while(curr > aWeekAgo){
+            
+            let currWeekDay = calendar.dateComponents([.weekday], from: curr).weekday
+            if(currWeekDay == 1)
+            {
+                return curr
+            }
+            
+            curr = addDays(date: curr, days: -1)
+        }
+        return curr
+    }
+    
 }
