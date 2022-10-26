@@ -3,24 +3,32 @@ import UIKit
 var selectedDate = Date()
 
 class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
-							UITableViewDelegate, UITableViewDataSource
+							UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate
 {
     
-    
+    @IBOutlet var searchBar: UISearchBar!
+
 	
 	@IBOutlet weak var monthLabel: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var collectionView: UICollectionView!
 	
-    
+    var searching = false
     var totalSquares = [Date]()
     
+    var filteredData: [String]!
 	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
 		setCellsView()
 		setWeekView()
+        
+        searchBar.delegate = self
+        
+        
+        self.navigationItem.titleView = searchBar
+        searchBar.placeholder = "Search"
 	}
 	
 	func setCellsView()
@@ -138,5 +146,40 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
 		super.viewDidAppear(animated)
 		setWeekView()
 	}
+    
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+        filteredData = []
+        
+    
+        
+        for event in eventsList {
+            
+            if event.name.contains(searchText){
+                
+                filteredData.append(event.name)
+                
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar){
+        
+        searching = false
+        searchBar.text = ""
+        tableView.reloadData()
+        
+        
+    }
+    
+    
+    
 }
+
+
+    
+   
 
