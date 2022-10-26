@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "684-6848957_weekly-calendar-icon-free-download-onlinewebfonts-png-transparent.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "684-6848957_weekly-calendar-icon-free-download-onlinewebfonts-png-transparent@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "684-6848957_weekly-calendar-icon-free-download-onlinewebfonts-png-transparent@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -19,6 +19,8 @@
 		017B20402905E9D900E8685A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017B20362905E9D900E8685A /* Main.storyboard */; };
 		01C178042901B82F004A12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C178032901B82F004A12CB /* Assets.xcassets */; };
 		01C178072901B82F004A12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C178052901B82F004A12CB /* LaunchScreen.storyboard */; };
+		01D1FA7B29087E3B00C9A67A /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1FA7A29087E3B00C9A67A /* DailyCell.swift */; };
+		01D1FA7D29087E5400C9A67A /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1FA7C29087E5400C9A67A /* DailyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		01C178032901B82F004A12CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C178062901B82F004A12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01C178082901B82F004A12CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D1FA7A29087E3B00C9A67A /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		01D1FA7C29087E5400C9A67A /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			children = (
 				017B20352905E9D900E8685A /* EventEditViewController.swift */,
 				017B20362905E9D900E8685A /* Main.storyboard */,
+				01D1FA7A29087E3B00C9A67A /* DailyCell.swift */,
+				01D1FA7C29087E5400C9A67A /* DailyViewController.swift */,
 				017B20332905E9D800E8685A /* SceneDelegate.swift */,
 				017B20322905E9D800E8685A /* AppDelegate.swift */,
 				017B20342905E9D800E8685A /* CalendarCell.swift */,
@@ -157,6 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				017B203E2905E9D900E8685A /* CalendarCell.swift in Sources */,
+				01D1FA7B29087E3B00C9A67A /* DailyCell.swift in Sources */,
+				01D1FA7D29087E5400C9A67A /* DailyViewController.swift in Sources */,
 				017B203C2905E9D900E8685A /* AppDelegate.swift in Sources */,
 				017B20392905E9D900E8685A /* EventCell.swift in Sources */,
 				017B203F2905E9D900E8685A /* EventEditViewController.swift in Sources */,

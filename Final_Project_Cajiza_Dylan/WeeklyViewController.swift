@@ -5,14 +5,16 @@ var selectedDate = Date()
 class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
 							UITableViewDelegate, UITableViewDataSource
 {
+    
+    
 	
 	@IBOutlet weak var monthLabel: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var collectionView: UICollectionView!
 	
-
-	var totalSquares = [Date]()
-	
+    
+    var totalSquares = [Date]()
+    
 	
 	override func viewDidLoad()
 	{
@@ -23,7 +25,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
 	
 	func setCellsView()
 	{
-		let width = (collectionView.frame.size.width - 2) / 8
+		let width = (collectionView.frame.size.width - 2) / 7
 		let height = (collectionView.frame.size.height - 2)
 		
 		let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -61,7 +63,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
 		
 		if(date == selectedDate)
 		{
-			cell.backgroundColor = UIColor.systemGreen
+			cell.backgroundColor = UIColor.systemBlue
 		}
 		else
 		{
@@ -108,13 +110,33 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
 		let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
 		cell.eventLabel.text = event.name + " " + CalendarHelper().timeString(date: event.date)
+        
 		return cell
 	}
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            
+            eventsList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            
+            tableView.endUpdates()
+            
+        }
+        
+    }
 	
 	override func viewDidAppear(_ animated: Bool)
 	{
 		super.viewDidAppear(animated)
-		tableView.reloadData()
+		setWeekView()
 	}
 }
 

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "weekly-calendar-glyph-icon-vector-on-white-background-flat-vector-weekly-calendar-icon-symbol-sign-from-modern-time-and-date-collection-for-mobile-concept-and-web-apps-design-700-186814473-removebg-pr.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "weekly-calendar-glyph-icon-vector-on-white-background-flat-vector-weekly-calendar-icon-symbol-sign-from-modern-time-and-date-collection-for-mobile-concept-and-web-apps-design-700-186814473-removebg-pr@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "weekly-calendar-glyph-icon-vector-on-white-background-flat-vector-weekly-calendar-icon-symbol-sign-from-modern-time-and-date-collection-for-mobile-concept-and-web-apps-design-700-186814473-removebg-pr@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
